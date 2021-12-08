@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.27"
+  },
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "notebook",
+  "main": "index.js",
+  "repository": "git@github.com:codingoer/notebook.git",
+  "author": "codingoer",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev-help": "vuepress dev --help",
+    "docs:dev": "vuepress dev docs --temp .temp --cache .cache --port 8088 --clean-cache --clean-temp --config .vuepress/config.js",
+    "docs:build": "vuepress build docs"
+  }
+}
