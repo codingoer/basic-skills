@@ -11,7 +11,9 @@
   "license": "MIT",
   "scripts": {
     "docs:dev-help": "vuepress dev --help",
-    "docs:dev": "vuepress dev docs --temp .temp --cache .cache --port 8088 --clean-cache --clean-temp --config .vuepress/config.js",
-    "docs:build": "vuepress build docs"
+    "docs:build-help": "vuepress build --help",
+    "docs:info": "vuepress info",
+    "docs:dev": "vuepress dev docs --temp .temp --cache .cache --port 8088 --clean-cache --clean-temp --config .vuepress/config.js --open",
+    "docs:build": "vuepress build docs --dest pages --temp .temp --cache .cache --clean-cache --clean-temp --config .vuepress/config.js"
   }
 }
