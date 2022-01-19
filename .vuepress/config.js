@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/notebook',
+    base: '/notebook/',
     lang: 'zh-CN',
     title: 'Java技术总结',
     description: 'Java笔记总结',
