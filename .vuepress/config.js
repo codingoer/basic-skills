@@ -10,6 +10,7 @@ module.exports = {
       logo: '/images/logo.png',
       sidebar: require('./sidebar/sidebar'),
       navbar: true,
+      sidebarDepth:3,
       navbar: require('./nav/nav'),
     },
   }
