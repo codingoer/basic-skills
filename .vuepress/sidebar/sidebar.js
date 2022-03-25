@@ -24,10 +24,10 @@ module.exports = {
   '/database/mongodb': require('./database/mongo'),
   '/database/elasticsearch': require('./database/elasticsearch'),
 
-  // Server
-  '/server/tomcat': require('./server/tomcat'),
-  '/server/nginx': require('./server/nginx'),
-  '/server/vmware/': require('./server/vmware'),
+  // Operation
+  '/operation/tomcat': require('./operation/tomcat'),
+  '/operation/nginx': require('./operation/nginx'),
+  '/operation/vmware/': require('./operation/vmware'),
 
   // Framework
   '/framework/spring-mvc/': require('./framework/spring-mvc'),
