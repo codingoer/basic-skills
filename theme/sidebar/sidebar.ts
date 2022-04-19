@@ -1,3 +1,5 @@
+export * as java from '../sidebar/java'
+
 module.exports = {
   // Java
   '/java/programing/': require('./java/programing'),
@@ -7,6 +9,8 @@ module.exports = {
   '/java/concurrency/': require('./java/concurrency'),
   '/java/dynamic/': require('./java/dynamic'),
   '/jvm/': require('./java/jvm'),
+  '/java-ee/':require('./java/javaee'),
+  '/jakarta-ee/':require('./java/javaee'),
 
   // Coding
   '/design-pattern/': require('./coding/design-pattern'),

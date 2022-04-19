@@ -1,4 +1,6 @@
-module.exports = [
+import {HopeThemeNavbarConfig } from "vuepress-theme-hope";
+
+export const navbarConf : HopeThemeNavbarConfig = [
   {
     text: 'Coding', 
     children: [
@@ -39,6 +41,13 @@ module.exports = [
           {text: 'Concurrency', link: '/java/concurrency/'},
           {text: 'JVM', link: '/jvm/'},
           {text: 'Dynamic', link: '/java/dynamic/'}
+        ]
+      },
+      {
+        text: 'EE',
+        children: [
+          {text: 'Java™ EE', link: '/java-ee/'},
+          {text: 'Jakarta EE', link: '/jakarta-ee/'},
         ]
       }
     ] 

@@ -117,7 +117,7 @@ allow-query     { any; };
 
 添加内容
 
-```conf
+```yaml
 zone "stage.com" IN {
        type master;
        file "named.stage.com";
@@ -140,7 +140,7 @@ vim /var/named/named.centos.vbird
 
 添加如下内容
 
-```conf
+```yaml
 $TTL  1H
 @       IN SOA dns.stage.com. lionel.mail.stage.com.(2020112301 3H 15M 1W 1D)
 @       IN NS   dns.stage.com.
@@ -160,7 +160,7 @@ vim /var/named/named.172.16.203
 
 添加如下内容
 
-```conf
+```yaml
 $TTL  600
 @       IN SOA  dns.stage.com. lionel.mail.stage.com.(2020112301 3H 15M 1W 1D)
 @       IN NS   dns.stage.com.
@@ -215,6 +215,7 @@ firewall-cmd --zone=public --list-ports
 
 https://www.cnblogs.com/itwangqiang/p/13395138.html
 
+```yaml
 Mar  5 15:45:24 130 named[2481]: network unreachable resolving './NS/IN': 2001:500:2d::d#53
 Mar  5 15:45:24 130 named[2481]: network unreachable resolving './NS/IN': 2001:dc3::35#53
 Mar  5 15:45:24 130 named[2481]: network unreachable resolving './NS/IN': 2001:500:2f::f#53
@@ -235,6 +236,7 @@ Mar  5 15:45:27 130 named[2481]: network unreachable resolving './DNSKEY/IN': 20
 Mar  5 15:45:27 130 named[2481]: network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
 Mar  5 15:45:27 130 named[2481]: network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
 Mar  5 15:45:27 130 named[2481]: network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+```
 
 添加 OPTIONS="-4" 参数到/etc/sysconfig/named 配置文件中:
 
@@ -243,14 +245,16 @@ verify failed due to bad signature (keyid=9799): RRSIG validity period has not b
 http://blog.sina.com.cn/s/blog_56ae1d580102y297.html
 解决方法是校对服务器时间，使用date 命令查看发现服务器时间确实异常、
 
-managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+`managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted`
 
-managed-keys-zone: Unable to fetch DNSKEY set '.': timed out
+`managed-keys-zone: Unable to fetch DNSKEY set '.': timed out`
 由于内部DNS启用dnssec，所以内部DNS会向根域名(13个根节点)获取DNSKEY信息；出去安全性的考虑这个DNSKEY的有效期限很短，所以内部DNS服务器隔一段时间就要去重新获取一次。
 
 
 # 没有设置forward-only
 
+
+```yaml
 [root@130 named]#  systemctl status named.service
 ● named.service - Berkeley Internet Name Domain (DNS)
    Loaded: loaded (/usr/lib/systemd/system/named.service; disabled; vendor preset: disabled)
@@ -261,8 +265,10 @@ managed-keys-zone: Unable to fetch DNSKEY set '.': timed out
   Process: 2933 ExecStartPre=/bin/bash -c if [ ! "$DISABLE_ZONE_CHECKING" == "yes" ]; then /usr/sbin/named-checkconf -z "$NAMEDCONF"; else echo "Checking of zone files is disabled"; fi (code=exited, status=0/SUCCESS)
  Main PID: 2937 (named)
    CGroup: /system.slice/named.service
-           └─2937 /usr/sbin/named -u named -c /etc/named.conf -4
+           └─2937 /usr/sbin/named -u named -c /etc/named.conf -4       
+```
 
+```yaml
 Mar 06 23:06:49 130 named[2937]: FORMERR resolving 'google.com/DS/IN': 192.12.94.30#53
 Mar 06 23:06:49 130 named[2937]: FORMERR resolving 'google.com/DS/IN': 192.54.112.30#53
 Mar 06 23:06:49 130 named[2937]: FORMERR resolving 'google.com/DS/IN': 192.26.92.30#53
@@ -273,3 +279,4 @@ Mar 06 23:06:49 130 named[2937]: FORMERR resolving 'google.com/DS/IN': 192.41.16
 Mar 06 23:06:49 130 named[2937]: FORMERR resolving 'google.com/DS/IN': 192.31.80.30#53
 Mar 06 23:06:49 130 named[2937]: FORMERR resolving 'google.com/DS/IN': 192.5.6.30#53
 Mar 06 23:06:49 130 named[2937]: FORMERR resolving 'google.com/DS/IN': 192.43.172.30#53
+```

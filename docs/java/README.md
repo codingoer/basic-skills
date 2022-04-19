@@ -1,3 +1,7 @@
+---
+sidebar: heading
+---
+
 # Java学习路线
 
 ## Java基础

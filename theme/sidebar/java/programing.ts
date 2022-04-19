@@ -1,3 +1,4 @@
+//import {HopeThemeSidebarConfig } from "vuepress-theme-hope";
 module.exports = [
     {
         text: 'Programing Base',
