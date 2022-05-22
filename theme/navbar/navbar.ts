@@ -32,7 +32,8 @@ export const navbarConf : HopeThemeNavbarConfig = [
           {text: 'Programing', link: '/java/programing/'},
           {text: 'OOP', link: '/java/oop/'},
           {text: 'Collection', link: '/java/collection/'},
-          {text: 'I/O', link: '/java/io/'}
+          {text: 'I/O', link: '/java/io/'},
+          {text: 'Java™ EE', link: "/java-ee/"}
         ]
       },
       {
@@ -43,13 +44,6 @@ export const navbarConf : HopeThemeNavbarConfig = [
           {text: 'Dynamic', link: '/java/dynamic/'}
         ]
       },
-      {
-        text: 'EE',
-        children: [
-          {text: 'Java™ EE', link: '/java-ee/'},
-          {text: 'Jakarta EE', link: '/jakarta-ee/'},
-        ]
-      }
     ] 
   },
   {
