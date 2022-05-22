@@ -14,7 +14,15 @@ module.exports = [
         collapsable: true,
         children: [
             { text:'VuePress CLI', link:'/guide/vuepress/cli' },
-            { text:'VuePress Config', link:'/guide/vuepress/config' }
+            { text:'VuePress Config', link:'/guide/vuepress/config' },
+            { text:'VuePress Frontmatter', link:'/guide/vuepress/frontmatter' }
+        ]
+    },
+    {
+        text: 'Theme Hope Reference',
+        collapsable: true,
+        children: [
+            { text:'Theme Interface', link:'/guide/hope-theme/interface' },
         ]
     }
 ]
