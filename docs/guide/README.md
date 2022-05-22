@@ -17,8 +17,11 @@ tag:
 
  - [Command Line Interface](vuepress/cli)
  - [Config](vuepress/config)
+ - [Frontmatter](vuepress/frontmatter.md)
 
-## Hope Theme Reference
+## Vuepress Theme Hope Reference
+
+- [Theme Hope Interface](hope-theme/interface)
 
 ## Markdown
 
