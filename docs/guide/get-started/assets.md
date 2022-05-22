@@ -41,7 +41,7 @@ Input
 
 Output
 
-![Java Logo](/basic-skills/java-1.svg)
+![Java Logo](/java-1.svg)
 
 ## Base Helper
 

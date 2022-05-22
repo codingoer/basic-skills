@@ -40,7 +40,7 @@ After importing icons and setting iconPrefix as below, you can use icon in multi
 
 [Iconfont](https://www.iconfont.cn/)
 
-![20220522171147](https:image.codingoer.top/blog/20220522171147.png)
+![20220522171147](https://image.codingoer.top/blog/20220522171147.png)
 
 ::: tip
 
