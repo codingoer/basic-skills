@@ -8,3 +8,4 @@ tag:
 
 ## IntelliJ IDEA
 
+- [Preferences](intelli-idea/README.md)
