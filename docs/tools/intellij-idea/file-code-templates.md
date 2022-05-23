@@ -2,7 +2,7 @@
 category: 
   - IDEA
 tag:
-  - IDEA  
+  - IDEA
 ---
 
 # File and code Templates
@@ -22,7 +22,7 @@ public class ${NAME} {
 
 ## Includes
 
-- 时间格式（跟对系统时间格式）
+- 时间格式（默认是跟随系统时间格式），可以在Date formats中重写日期和时间格式
 
 ```java
 /**

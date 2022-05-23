@@ -1,11 +1,11 @@
 ---
 title: "Develop Tools"
 category: 
-  - Guide
+  - Develop Tool
 tag:
-  - Guide  
+  - IDEA
 ---
 
 ## IntelliJ IDEA
 
-- [Preferences](intelli-idea/README.md)
+- [Preferences](intellij-idea/README.md)

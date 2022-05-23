@@ -2,7 +2,7 @@
 category: 
   - IDEA
 tag:
-  - IDEA  
+  - IDEA
 ---
 
 # Live Templates
