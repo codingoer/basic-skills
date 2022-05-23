@@ -25,12 +25,15 @@ export const themeConfig : HopeThemeOptions = {
     blog: {
         name: "Javaer Basic Skills",
         medias: {
-            QQ: "http://wpa.qq.com/msgrd?v=3&uin=1178522294&site=qq&menu=yes",
+            GitHub: "https://github.com/codingoer"
         }
     },
 
     // plugins config
     plugins: {
         blog: true,
+        mdEnhance: {
+            tasklist: true,
+        }
     }
 };
