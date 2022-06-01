@@ -36,12 +36,12 @@ We can reference our logo in current page like this:
 Input
 
 ```md
-![Java Logo](/basic-skills/images/logo.png)
+![Java Logo](/images/logo.png)
 ```
 
 Output
 
-![Java Logo](/basic-skills/images/logo.png)
+![Java Logo](/images/logo.png)
 
 ## Base Helper
 

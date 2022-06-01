@@ -223,22 +223,22 @@ Markdown使用的图像语法与链接的语法类似，允许两种样式：**�
 - 内联
 
 ```md
-![Alt text](/example.jpeg)
-![Alt text](/example.jpeg "Optional title")
+![Alt text](/images/logo.png)
+![Alt text](/images/logo.png "Optional title")
 ```
 
-![Alt text](/example.jpeg "Optional title")
+![Alt text](/images/logo.png "Optional title")
 
 - 引用
 
 ```md
 ![Alt text][id]
-[id]: /example.jpeg  "Optional title attribute"
+[id]: /images/logo.png  "Optional title attribute"
 ```
 
 ![Alt text][id]
 
-[id]: /example.jpeg  "Optional title attribute"
+[id]: /images/logo.png  "Optional title attribute"
 
 ## 其他
 **MISCELLANEOUS**
