@@ -24,5 +24,17 @@ module.exports = [
         children: [
             { text:'Theme Interface', link:'/guide/hope-theme/interface' },
         ]
+    },
+    {
+        text: 'Markdown',
+        collapsable: true,
+        children: [
+            { text:'Markdown original syntax', link:'/guide/markdown/original' },
+            { text:'CommonMark', link:'/guide/markdown/commonmark' },
+            { text:'GitHub Flavored Markdown Spec', link:'/guide/markdown/gfm' },
+            { text:'Markdown Parser', link:'/guide/markdown/parser-list' },
+            { text:'Vuepress Markdown Enhance', link:'/guide/markdown/vuepress-markdown' },
+            { text:'Theme Hope Markdown Enhance', link:'/guide/markdown/theme-hope-markdown' },
+        ]
     }
 ]
