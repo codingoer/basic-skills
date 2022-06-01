@@ -1,0 +1,1 @@
+const e={key:"v-6bfcdde2",path:"/category/develop-tool/",title:"Develop Tool Category",lang:"en-US",frontmatter:{title:"Develop Tool Category",blog:{type:"category",name:"Develop Tool",key:"category"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},filePathRelative:null};export{e as data};

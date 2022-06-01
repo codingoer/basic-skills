@@ -1,0 +1,1 @@
+import{c as e,o as a,a as t,e as c}from"./app.df89ce13.js";import{_ as l}from"./plugin-vue_export-helper.21dcd24c.js";const o={},r={id:"callable",tabindex:"-1"},s=t("a",{class:"header-anchor",href:"#callable","aria-hidden":"true"},"#",-1),_=c(" Callable"),n=[s,_];function d(i,h){return a(),e("h1",r,n)}var b=l(o,[["render",d],["__file","callable.html.vue"]]);export{b as default};

@@ -1,0 +1,1 @@
+const e={key:"v-ed16b278",path:"/tag/vuepress/",title:"Vuepress Tags",lang:"en-US",frontmatter:{title:"Vuepress Tags",blog:{type:"category",name:"Vuepress",key:"tag"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},filePathRelative:null};export{e as data};

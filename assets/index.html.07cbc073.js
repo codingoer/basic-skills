@@ -1,0 +1,1 @@
+const e={key:"v-7448c627",path:"/jvm/",title:"Java Virtual Machine",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{createdTime:1650384157e3,updatedTime:1650384157e3,contributors:[{name:"codingoer",email:"codingoer@163.com",commits:3}]},readingTime:{minutes:.01,words:3},filePathRelative:"jvm/README.md"};export{e as data};

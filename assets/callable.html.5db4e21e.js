@@ -1,0 +1,1 @@
+const e={key:"v-f66cd868",path:"/java/concurrency/thread/callable.html",title:"Callable",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{createdTime:1644161253e3,updatedTime:1644161253e3,contributors:[{name:"codingoer",email:"codingoer@163.com",commits:3}]},readingTime:{minutes:0,words:1},filePathRelative:"java/concurrency/thread/callable.md"};export{e as data};
