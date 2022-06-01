@@ -6,6 +6,10 @@ tag:
   - Vuepress  
 ---
 
+::: warning
+以下文档基于`vuepress`和`vuepress-hope-theme`的官方文档，在此基础上做了翻译、总结、归纳。
+:::
+
 ## Getting Started
 
  - [Inroduction](get-started/intro)
@@ -24,6 +28,13 @@ tag:
 - [Theme Hope Interface](hope-theme/interface)
 
 ## Markdown
+
+- [Markdown original syntax](markdown/original.md)
+- [CommonMark](markdown/commonmark.md)
+- [GitHub Flavored Markdown Spec](markdown/gfm.md)
+- [Markdown Parser](markdown/parser-list.md)
+- [Vuepress Markdown Enhance](markdown/vuepress-markdown.md)
+- [Theme Hope Markdown Enhance](markdown/theme-hope-markdown.md)
 
 ## Plugins
 

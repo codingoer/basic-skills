@@ -2,8 +2,7 @@
 category: 
   - Vuepress
 tag:
-  - Vuepress  
+  - Markdown  
 ---
 
-# Theme Config
-
+# Markdown Vuepress
