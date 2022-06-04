@@ -15,7 +15,8 @@ module.exports = [
         children: [
             { text:'VuePress CLI', link:'/guide/vuepress/cli' },
             { text:'VuePress Config', link:'/guide/vuepress/config' },
-            { text:'VuePress Frontmatter', link:'/guide/vuepress/frontmatter' }
+            { text:'VuePress Frontmatter', link:'/guide/vuepress/frontmatter' },
+            { text:'VuePress Components', link:'/guide/vuepress/components' }
         ]
     },
     {

@@ -1,8 +1,8 @@
 import { defineUserConfig } from 'vuepress'
-import { HopeThemeOptions } from "vuepress-theme-hope";
-import { themeConfig } from "../theme/config"
+import HopeTheme from "../theme/config";
+import { path } from "@vuepress/utils";
 
-export default defineUserConfig<HopeThemeOptions>({
+export default defineUserConfig({
     // site config
     base: '/basic-skills/',
     lang: 'en-US',
@@ -31,6 +31,12 @@ export default defineUserConfig<HopeThemeOptions>({
     },
   
     // theme and its config
-    theme: 'hope',
-    themeConfig: themeConfig,
-  })
+    theme: HopeTheme,
+
+    // Plugin API
+    // Development Hooks
+    alias: {
+      "@IconDisplay": path.resolve(__dirname, "./components/IconDisplay"),
+    },
+
+})

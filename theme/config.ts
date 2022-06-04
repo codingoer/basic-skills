@@ -1,9 +1,9 @@
-import { HopeThemeOptions } from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope";
 import { navbarConf } from "./navbar/index";
 import { sidebarConf } from "./sidebar/index";
 
 
-export const themeConfig : HopeThemeOptions = {
+export default hopeTheme({
     // your config here
     
     // theme layout options
@@ -34,6 +34,7 @@ export const themeConfig : HopeThemeOptions = {
         blog: true,
         mdEnhance: {
             tasklist: true,
-        }
+            codetabs: true,
+        },
     }
-};
+})
