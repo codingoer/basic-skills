@@ -13,3 +13,5 @@ dir:
 - [VuePress Config](config.md)
 
 - [Frontmatter](frontmatter.md)
+
+- [Vuepress Components](components.md)

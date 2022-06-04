@@ -7,7 +7,7 @@ tag:
 ---
 
 ::: warning
-以下文档基于`vuepress`和`vuepress-hope-theme`的官方文档，在此基础上做了翻译、总结、归纳。
+以下文档基于`vuepress`和`vuepress-hope-theme`的官方文档，在此基础上做了整理、总结、归纳。
 :::
 
 ## Getting Started
@@ -22,6 +22,7 @@ tag:
  - [Command Line Interface](vuepress/cli)
  - [Config](vuepress/config)
  - [Frontmatter](vuepress/frontmatter.md)
+ - [Components](vuepress/components.md)
 
 ## Vuepress Theme Hope Reference
 

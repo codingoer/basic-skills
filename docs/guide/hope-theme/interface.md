@@ -55,5 +55,11 @@ If you add a new icon in the future, please regenerate the new CSS address and o
 <link rel="stylesheet" href="//at.alicdn.com/t/font_3341258_msu9bxgwxmk.css" />
 ```
 
+<IconDisplay link="//at.alicdn.com/t/font_3341258_msu9bxgwxmk.css" />
+
+<script setup lang="ts">
+import IconDisplay from '@IconDisplay';
+</script>
+
 ## Code Themes
 

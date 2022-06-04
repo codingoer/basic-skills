@@ -52,3 +52,33 @@ For example, if you plan to deploy your site to https://foo.github.io/bar/, then
 ```md
 ![Java Logo](/basic-skills/java-1.svg)
 ```
+
+::: warning
+dev的时候如果写上base路径图片是可以显示出来的，build的时候写上base路径会提示错误。
+:::
+
+## Packages and Path Aliases
+
+you can reference images from dependent packages:
+
+```shell
+yarn add -D package-name
+```
+
+```md
+![Image from dependency](package-name/image.png)
+```
+
+The path aliases that set in config file are also supported:
+
+```json
+import { path } from "@vuepress/utils";
+
+alias: {
+      "@IconDisplay": path.resolve(__dirname, "./components/IconDisplay"),
+    },
+```
+
+```md
+![Image from path alias](@alias/image.png)
+```
